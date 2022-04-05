@@ -2,9 +2,8 @@ const express = require("express");
 const app = express();
 
 const isSquare = (id) => {
-    let n = Math.sqrt(id)
-    n = n.toFixed(2)
-    if(n*n === id) {
+    n = parseInt(Math.sqrt(id))
+    if(n*n == id) {
         return true
     } else {
         return false
